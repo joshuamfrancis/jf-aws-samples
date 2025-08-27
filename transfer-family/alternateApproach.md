@@ -39,6 +39,7 @@ IAM role details
 Security group ID (for VPC endpoints)
 CloudWatch log group name
 
+```
 # Data source for getting the current AWS account ID and region
 data "aws_caller_identity" "current" {}
 data "aws_region" "current" {}
@@ -586,3 +587,4 @@ tags = {
   Project     = "file-transfer"
   Owner       = "devops-team"
 }
+```
