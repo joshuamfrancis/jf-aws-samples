@@ -10,7 +10,7 @@
 #         ├── main.tf            (module resources)
 #         ├── variables.tf       (module variables)
 #         └── outputs.tf         (module outputs)
-```
+
 =================================================================
 modules/transfer-family/main.tf
 =================================================================
@@ -40,7 +40,6 @@ IAM role details
 Security group ID (for VPC endpoints)
 CloudWatch log group name
 
-```
 # Data source for getting the current AWS account ID and region
 data "aws_caller_identity" "current" {}
 data "aws_region" "current" {}
