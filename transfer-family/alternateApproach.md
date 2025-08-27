@@ -1,3 +1,4 @@
+```
 # Directory Structure:
 # .
 # ├── main.tf                    (root module)
@@ -9,13 +10,13 @@
 #         ├── main.tf            (module resources)
 #         ├── variables.tf       (module variables)
 #         └── outputs.tf         (module outputs)
+```
+=================================================================
+modules/transfer-family/main.tf
+=================================================================
 
-# =================================================================
-# modules/transfer-family/main.tf
-# =================================================================
-
-# Key Features
-## Module Components:
+Key Features
+Module Components:
 
 Transfer Family Server - Configurable with multiple protocols (SFTP, FTP, FTPS)
 IAM Role & Policies - For server operations and logging
@@ -24,14 +25,14 @@ CloudWatch Logging - Optional logging configuration
 Security Group - For VPC endpoints with configurable access rules
 VPC Support - Can deploy as public or VPC endpoint
 
-# Variable Passing:
+Variable Passing:
 
 Root to Module: Uses the module block with source path
 Flexible Configuration: Supports both public and VPC endpoints
 Optional Resources: S3 bucket and logging can be enabled/disabled
 Security: Configurable CIDR blocks and protocols
 
-# Output Variables:
+Output Variables:
 
 Server details (ID, ARN, endpoint, host key fingerprint)
 S3 bucket information (if created)
